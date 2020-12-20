@@ -1,6 +1,6 @@
 let testDependencies = [ "assert", "exceptions" ]
 
-in  { name = "my-project"
+in  { name = "return"
     , dependencies = [ "mason-prelude" ] # testDependencies
     , packages = ./packages.dhall
     , sources = [ "src/**/*.purs", "test/**/*.purs" ]
