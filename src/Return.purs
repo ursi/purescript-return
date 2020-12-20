@@ -21,7 +21,7 @@ unsafeThrow ra =
         Return a -> a
     )
 
-foreign import mkReturnableImpl :: ∀ a b. (Return a -> a) -> ((Return a -> a) -> b) -> b
+foreign import mkReturnableImpl :: ∀ a. (Return a -> a) -> ((Return a -> a) -> a) -> a
 
-mkReturnable :: ∀ a b. ((Return a -> a) -> b) -> b
+mkReturnable :: ∀ a. ((Return a -> a) -> a) -> a
 mkReturnable = mkReturnableImpl unsafeThrow
