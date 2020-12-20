@@ -7,10 +7,10 @@ data Return a
   | Return a
 ```
 
-and a function 
+and a function
 
 ```purescript
-mkReturnable :: ∀ a b. ((Return a -> a) -> b) -> b
+mkReturnable :: ∀ a. ((Return a -> a) -> a) -> a
 ```
 
 Using `mkReturnable` you can create functions that "return" values early in a way that you normally would have to use explicit recursion to accomplish.
