@@ -21,9 +21,9 @@
              shell;
          in
          { devShell =
-             with pkgs;
              make-shell
                { packages =
+                   with pkgs;
                    [ nodejs
                      nodePackages.bower
                      nodePackages.pulp
