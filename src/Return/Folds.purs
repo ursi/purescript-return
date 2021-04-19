@@ -1,8 +1,12 @@
 module Return.Folds where
 
-import MasonPrelude
+import Prelude
+
+import Data.Foldable (class Foldable)
 import Data.Foldable as F
+import Data.FoldableWithIndex (class FoldableWithIndex)
 import Data.FoldableWithIndex as Fi
+import PointFree ((<.), (<..), (<...))
 import Return (Return, mkReturnable)
 
 foldl :: ∀ a b f. Foldable f => (b -> a -> Return b) -> b -> f a -> b

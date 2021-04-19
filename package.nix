@@ -1,4 +1,9 @@
-{ ps-pkgs-ns, ... }:
+{ ps-pkgs, ... }:
+  with ps-pkgs;
   { version = "0.1.1";
-    dependencies = [ ps-pkgs-ns.ursi.prelude ];
+    dependencies =
+      [ foldable-traversable
+        point-free
+        prelude
+      ];
   }
