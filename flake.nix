@@ -35,7 +35,7 @@
                      nodePackages.bower
                      nodePackages.pulp
                      purs-nix.purescript
-                     (command {})
+                     (command { inherit package; })
                    ];
                };
          }
