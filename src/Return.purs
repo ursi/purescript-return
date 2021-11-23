@@ -13,8 +13,8 @@ unsafeThrow :: ∀ a. Return a -> a
 unsafeThrow ra =
   unsafeThrowImpl
     ( case ra of
-        Cont a -> false
-        Return a -> true
+        Cont _ -> false
+        Return _ -> true
     )
     ( case ra of
         Cont a -> a

@@ -33,6 +33,7 @@
                      nodePackages.bower
                      nodePackages.pulp
                      purs-nix.purescript
+                     purs-nix.purescript-language-server
                      (command { inherit package; })
                    ];
                };
