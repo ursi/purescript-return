@@ -1,6 +1,6 @@
 { ps-pkgs, licenses, ... }:
   with ps-pkgs;
-  { version = "0.1.2";
+  { version = "0.1.4";
 
     dependencies =
       [ foldable-traversable
