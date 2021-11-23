@@ -1,42 +1,5 @@
 {
   "nodes": {
-    "builders": {
-      "locked": {
-        "lastModified": 1618448170,
-        "narHash": "sha256-K8OOt1YYDjki+HRDnbbDtJVmoDZyOc/7NGN4gEKODm8=",
-        "owner": "ursi",
-        "repo": "nix-builders",
-        "rev": "4861c376d6dca7a49687ace1e06f9b22e916443e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ursi",
-        "repo": "nix-builders",
-        "type": "github"
-      }
-    },
-    "easy-ps": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "utils": "utils"
-      },
-      "locked": {
-        "lastModified": 1619482844,
-        "narHash": "sha256-jkacpeGtow6ab56xXxBD7nFfnMt9N6sCVzitpjDGcIY=",
-        "owner": "ursi",
-        "repo": "easy-purescript-nix",
-        "rev": "cd76648874541b17a9c7690398178f8433f13eff",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ursi",
-        "ref": "flake",
-        "repo": "easy-purescript-nix",
-        "type": "github"
-      }
-    },
     "flake-utils": {
       "locked": {
         "lastModified": 1618217525,
@@ -52,68 +15,7 @@
         "type": "github"
       }
     },
-    "flake-utils_2": {
-      "locked": {
-        "lastModified": 1618217525,
-        "narHash": "sha256-WGrhVczjXTiswQaoxQ+0PTfbLNeOQM6M36zvLn78AYg=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c6169a2772643c4a93a0b5ac1c61e296cba68544",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "flake-utils_3": {
-      "locked": {
-        "lastModified": 1618217525,
-        "narHash": "sha256-WGrhVczjXTiswQaoxQ+0PTfbLNeOQM6M36zvLn78AYg=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c6169a2772643c4a93a0b5ac1c61e296cba68544",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "make-shell": {
-      "locked": {
-        "lastModified": 1619482051,
-        "narHash": "sha256-HM5lFiBKKfy/L7Ifk6mKRTT1UfQfSSzIMLBzDnPkH6Q=",
-        "owner": "ursi",
-        "repo": "nix-make-shell",
-        "rev": "ed72df45d0a81784eee8603e366e1f1ae9da6950",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ursi",
-        "ref": "1",
-        "repo": "nix-make-shell",
-        "type": "github"
-      }
-    },
-    "make-shell_2": {
-      "locked": {
-        "lastModified": 1618621875,
-        "narHash": "sha256-BLgERxhECDbNFcf5VdqhraWC/jsAAJbJG3n67iqWT4M=",
-        "owner": "ursi",
-        "repo": "nix-make-shell",
-        "rev": "908f54ca8a3c5e45a2689aac27ba75aa5a02adaa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ursi",
-        "repo": "nix-make-shell",
-        "type": "github"
-      }
-    },
-    "make-shell_3": {
       "locked": {
         "lastModified": 1619482051,
         "narHash": "sha256-HM5lFiBKKfy/L7Ifk6mKRTT1UfQfSSzIMLBzDnPkH6Q=",
@@ -145,35 +47,16 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1619446560,
-        "narHash": "sha256-R9iG5d1ORvho5UlyEUsX8Nu1cnCV+YtWEHlWlqftaQo=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "32f7980afb5e33f1e078a51e715b9f102f396a69",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "purs-nix": {
       "inputs": {
-        "builders": "builders",
-        "easy-ps": "easy-ps",
-        "nixpkgs": "nixpkgs_2",
-        "utils": "utils_2"
+        "utils": "utils"
       },
       "locked": {
-        "lastModified": 1619553255,
-        "narHash": "sha256-wq5XAfA7xoeUK99ymfTpex7lrhaTDwN79S8yeEALaas=",
+        "lastModified": 1635552092,
+        "narHash": "sha256-INUFZcGy0QdmY1V3RMutNF9qMjC4oOcvzo0IU7pLOxc=",
         "owner": "ursi",
         "repo": "purs-nix",
-        "rev": "f8248ba03e427ffe9afd8dc34e524bf8c74acc2f",
+        "rev": "bb56e070b6d999fa6f1817b2b2af667290d06f6f",
         "type": "github"
       },
       "original": {
@@ -186,65 +69,40 @@
       "inputs": {
         "nixpkgs": "nixpkgs",
         "purs-nix": "purs-nix",
-        "utils": "utils_3"
+        "utils": "utils_2"
       }
     },
     "utils": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "make-shell": "make-shell"
-      },
       "locked": {
-        "lastModified": 1619482154,
-        "narHash": "sha256-8H/k4bCq2EMKc4Q1ACDSuaEZs8SNRCjZWD4/wi50v2Y=",
-        "owner": "ursi",
+        "lastModified": 1620759905,
+        "narHash": "sha256-WiyWawrgmyN0EdmiHyG2V+fqReiVi8bM9cRdMaKQOFg=",
+        "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "2493ce466204663f24b3a813d8d5876f4d773fd7",
+        "rev": "b543720b25df6ffdfcf9227afafc5b8c1fabfae8",
         "type": "github"
       },
       "original": {
-        "owner": "ursi",
-        "ref": "1",
+        "owner": "numtide",
         "repo": "flake-utils",
         "type": "github"
       }
     },
     "utils_2": {
       "inputs": {
-        "flake-utils": "flake-utils_2",
-        "make-shell": "make-shell_2"
+        "flake-utils": "flake-utils",
+        "make-shell": "make-shell"
       },
       "locked": {
-        "lastModified": 1619411821,
-        "narHash": "sha256-T+lFHtXYU3mgXxQDIgnx49kuTjC6UFcmV6fhJLchNWw=",
+        "lastModified": 1635037316,
+        "narHash": "sha256-TTYcq2gQVeW7p1K7LNl3wMQLICpKdnocTxm7RbHz/KM=",
         "owner": "ursi",
         "repo": "flake-utils",
-        "rev": "b7925fe2873f54ca679e968b39fb9a5dc4ea6c4e",
+        "rev": "1e16eb9a59cb8ccc81613a7d80ece0e6c962d7aa",
         "type": "github"
       },
       "original": {
         "owner": "ursi",
-        "ref": "1",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "utils_3": {
-      "inputs": {
-        "flake-utils": "flake-utils_3",
-        "make-shell": "make-shell_3"
-      },
-      "locked": {
-        "lastModified": 1619482154,
-        "narHash": "sha256-8H/k4bCq2EMKc4Q1ACDSuaEZs8SNRCjZWD4/wi50v2Y=",
-        "owner": "ursi",
-        "repo": "flake-utils",
-        "rev": "2493ce466204663f24b3a813d8d5876f4d773fd7",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ursi",
-        "ref": "1",
+        "ref": "3",
         "repo": "flake-utils",
         "type": "github"
       }
