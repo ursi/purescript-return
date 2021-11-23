@@ -3,9 +3,17 @@ module Return
   , mkReturnable
   ) where
 
+import Prelude
+
 data Return a
   = Cont a
   | Return a
+
+instance Functor Return where
+  map f =
+    case _ of
+      Cont a -> Cont $ f a
+      Return a -> Return $ f a
 
 foreign import unsafeThrowImpl :: ∀ a. Boolean -> a -> a
 
