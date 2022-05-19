@@ -16,7 +16,7 @@ main = do
     $ R.foldl (\acc n -> Return $ n + acc) 0 (1 .. 10)
     == 1
   assert' "throws the appropriate value on actual errors"
-    $ catch_ (\_ -> foldl (\acc n -> Ex.unsafeThrow "test") 0 $ 1 .. 10)
+    $ catch_ (\_ -> foldl (\_ _ -> Ex.unsafeThrow "test") 0 $ 1 .. 10)
     == "Error: test"
 
 foreign import catch_ :: ∀ a. (Unit -> a) -> String
