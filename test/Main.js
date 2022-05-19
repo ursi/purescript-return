@@ -1,4 +1,4 @@
-exports.catch = thunk => {
+export const catch_ = thunk => {
 	try {
 		thunk();
 		throw "your function did not throw";

@@ -1,14 +1,14 @@
 {
   "dependencies": {
-    "purescript-foldable-traversable": "^v5.0.0",
-    "purescript-point-free": "https://github.com/ursi/purescript-point-free.git#v0.1.3",
-    "purescript-prelude": "^v5.0.0"
+    "purescript-foldable-traversable": "^v6.0.0",
+    "purescript-point-free": "https://github.com/ursi/purescript-point-free.git#v1.0.0",
+    "purescript-prelude": "^v6.0.0"
   },
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "asdf"
+    "output"
   ],
   "license": [
     "BSD-3-Clause"
