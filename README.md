@@ -22,4 +22,4 @@ foldl' :: ∀ a b f. Foldable f => (b -> a -> Return b) -> b -> f a -> b
 foldl' f init as = mkReturnable \return -> foldl (\b a -> return $ f b a) init as
 ```
 
-This is nice because it allows for you to define, for fee, folds that can exit early for anything that already has a `Foldable` instance, instead of having to use recursion to handle each case differently.
+This is nice because it allows for you to define, for free, folds that can exit early for anything that already has a `Foldable` instance, instead of having to use recursion to handle each case differently.
